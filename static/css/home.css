@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+body{
+    margin: 0 auto;
+    background-color: #141414;
+    color: white;
+}
+
+.text{
+    margin: 20px;
+}

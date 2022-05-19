@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--chat bar-->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">
+            Converse comigo!
+            <i id="chat-icon" style="color: white;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- message container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Carregando..</span></p>
+                        </div>
+                        <!-- user input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input type="text" id="textInput" class="input-box" name="msg"
+                                placeholder="Pressione 'Enter' para enviar.">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: darkgray;" class="fa fa-fw fa-send" onclick="sendButton()"></i>  
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom"></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="text">
+    <h1>Chatbot</h1>
+        <p>Esse chatbot não diferencia letras maiúsculas de minúsculas e ignora as pontuações para melhor identificar as mensagens</p>
+        <h3>Mensagens sugeridas</h3>
+        <ul>
+            <li>Olá</li>
+            <li>Bom dia</li>
+            <li>Tchau</li>
+            <li>Pedra</li>
+            <li>Papel</li>
+            <li>Tesoura</li>
+            <li>Devo contratar o Andre?</li>
+        </ul>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+</html>
